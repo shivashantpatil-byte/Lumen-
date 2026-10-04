@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — LUMEN Interior Architecture &amp; Design</title>
+  <meta name="description" content="Start a project with LUMEN. Reach our Mumbai studio by email, phone, or the inquiry form below." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">LUMEN</a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="studio.html" class="nav-link">Studio</a></li>
+          <li><a href="contact.html" class="nav-link is-active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary header-cta">Start a Project</a>
+
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="studio.html" class="nav-link">Studio</a></li>
+        <li><a href="contact.html" class="nav-link is-active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Start a Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="page-intro container">
+      <p class="eyebrow">Contact</p>
+      <h1>Let's create something meaningful.</h1>
+      <p class="body-lg">
+        Tell us a little about your space and where you are in the
+        process — even a rough idea is a good place to start.
+      </p>
+    </section>
+
+    <section class="contact-layout container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h2>Studio</h2>
+          <ul>
+            <li>
+              <span class="info-label">Email</span>
+              <a href="mailto:studio@lumen-interiors.com">studio@lumen-interiors.com</a>
+            </li>
+            <li>
+              <span class="info-label">Phone</span>
+              <a href="tel:+912261234567">+91 22 6123 4567</a>
+            </li>
+            <li>
+              <span class="info-label">Studio Location</span>
+              <address>4th Floor, Kamala Mills,<br />Lower Parel, Mumbai 400013</address>
+            </li>
+          </ul>
+
+          <div>
+            <span class="info-label">Follow</span>
+            <ul class="social-list">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Pinterest</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          id="inquiry-form"
+          action="https://formspree.io/f/xrpbbaay"
+          method="POST"
+          novalidate
+        >
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <span class="field-error">Please tell us your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <span class="field-error">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="project-type">Project Type</label>
+            <select id="project-type" name="project-type" required>
+              <option value="" selected disabled>Select a project type</option>
+              <option value="residential">Residential</option>
+              <option value="hospitality">Hospitality</option>
+              <option value="commercial">Commercial</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-error">Please select a project type.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="field-error">Please add a short message.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">LUMEN</a>
+        <p>Spaces shaped by light, material, and intention.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <p class="footer-heading">Studio</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <p class="footer-heading">Contact</p>
+        <ul>
+          <li><a href="mailto:studio@lumen-interiors.com">studio@lumen-interiors.com</a></li>
+          <li><a href="tel:+912261234567">+91 22 6123 4567</a></li>
+          <li>4th Floor, Kamala Mills, Lower Parel, Mumbai</li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <p class="footer-heading">Follow</p>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 LUMEN Interior Architecture &amp; Design Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
